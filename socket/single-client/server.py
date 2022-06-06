@@ -2,9 +2,11 @@ from http import client
 import socket
 
 # print(socket.gethostname())
+# HOST =socket.gethostbyname(socket.gethostname())
+# print (HOST)
 
 s = socket.socket()
-s.bind((socket.gethostname(), 1809))
+s.bind(('', 55551))
 s.listen(5)
 
 client_socket, address = s.accept()

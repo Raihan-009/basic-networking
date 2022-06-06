@@ -2,7 +2,7 @@ from http import client
 import socket
 
 s = socket.socket()
-s.connect((socket.gethostname(), 1809))
+s.connect((socket.gethostname(), 55551))
 
 
 server_msg = s.recv(1024)
