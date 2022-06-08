@@ -1,4 +1,13 @@
+from imghdr import what
 import os 
 
+
+process_no = 1
+
 whatever = os.fork()
-print("Process - 01")
+print(type(whatever))
+
+
+print(whatever)
+
+print("Process " + str(process_no))
