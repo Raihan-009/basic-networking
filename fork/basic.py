@@ -1,4 +1,3 @@
-from imghdr import what
 import os 
 
 process_no = 1
