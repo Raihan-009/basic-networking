@@ -31,12 +31,19 @@ if we use fork() :
 ```python
 
 import os 
-whatever = os.fork()
-print("Process - 01")
+
+process_no = 1
+
+PID = os.fork()
+print(f'Process No 1 is executing & respective PID is {PID}')
 
 ```
 
 And here we got the exact same output but two times!
+```
+Process No 1 is executing & respective PID is 3463
+Process No 1 is executing & respective PID is 0
+```
 
 Example for PID :
 
